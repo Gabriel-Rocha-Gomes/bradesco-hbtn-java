@@ -10,7 +10,7 @@ public class Empregado {
     }
 
     double calcularBonus(Departamento departamento) {
-        return departamento.atingiuMeta() ? 0.1 * this.salarioFixo : 0.0;
+        return departamento.alcancouMeta() ? 0.1 * this.salarioFixo : 0.0;
     }
 
     double calcularSalarioTotal(Departamento departamento) {
