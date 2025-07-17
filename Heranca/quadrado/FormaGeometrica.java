@@ -1,5 +1,3 @@
-package Heranca.quadrado;
-
 public class FormaGeometrica {
     
     public double area() {

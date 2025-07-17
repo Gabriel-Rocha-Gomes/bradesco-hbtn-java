@@ -1,7 +1,3 @@
-package Heranca.quadrado;
-
-import Heranca.retangulo.Retangulo;
-
 public class Quadrado extends Retangulo {
     private double lado;
 

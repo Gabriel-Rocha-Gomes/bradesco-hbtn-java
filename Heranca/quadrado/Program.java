@@ -1,5 +1,3 @@
-package Heranca.quadrado;
-
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
