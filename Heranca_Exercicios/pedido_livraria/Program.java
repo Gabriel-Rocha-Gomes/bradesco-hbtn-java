@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.Locale;
+
+import Heranca_Exercicios.pedido_livraria.produtos.Dvd;
+import Heranca_Exercicios.pedido_livraria.produtos.Livro;
 
 public class Program {
         public static void main(String[] args) {
