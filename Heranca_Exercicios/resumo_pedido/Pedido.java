@@ -39,7 +39,7 @@ public class Pedido {
         for (ItemPedido item : itens) {
             totalPedido += item.getQuantidade() * item.getProduto().obterPrecoLiquido();
             System.out.println(
-                    format("Tipo: %s Titulo: %s Preco: %.2f  Quant: %d  Total: %.2f",
+                    format("Tipo: %s  Titulo: %s  Preco: %.2f  Quant: %d  Total: %.2f",
                     item.getProduto().getClass().getSimpleName(),
                     item.getProduto().getTitulo(),
                     item.getProduto().obterPrecoLiquido(),
@@ -47,7 +47,7 @@ public class Pedido {
                     (item.getQuantidade() * item.getProduto().obterPrecoLiquido())));
         }
         System.out.println("----------------------------");
-        System.out.println(format("DESCONTO: %.2f", getPercentualDesconto() != 0.0 ? totalPedido / getPercentualDesconto(): 0.0));
+        System.out.println(format("DESCONTO: %.2f", percentualDesconto != 0.0 ? totalPedido * (percentualDesconto / 100): 0.0));
         System.out.println(format("TOTAL PRODUTOS: %.2f", totalPedido));
         System.out.println("----------------------------");
         System.out.println(format("TOTAL PEDIDO: %.2f", calcularTotal()));
