@@ -1,6 +1,6 @@
-import Heranca_exercicios.pedido_livraria.produtos.Produto;
+import produtos.Produto;
 
-public class ItemPedido {
+class ItemPedido {
     private int quantidade;
     private Produto produto;
 
